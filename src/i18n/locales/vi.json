@@ -1,1 +1,9 @@
-{}
+{
+  "owner": "Đặng Việt Hoàng",
+  "nav": {
+    "about": "Giới thiệu",
+    "services": "Dịch vụ",
+    "projects": "Dự án",
+    "contact": "Liên hệ"
+  }
+}

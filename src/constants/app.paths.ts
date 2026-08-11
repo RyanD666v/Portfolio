@@ -1,5 +1,9 @@
 export const APP_PATHS = {
   home: '/',
+  about: '/about',
+  services: '/services',
+  projects: '/projects',
+  contact: '/contact',
   notFound: '*'
 } as const
 

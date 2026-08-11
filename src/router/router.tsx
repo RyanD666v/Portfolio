@@ -1,19 +1,26 @@
 import type { RouteObject } from 'react-router'
 import ErrorBoundary from '~/components/common/ErrorBoundary'
 import { APP_PATHS } from '~/constants/app.paths'
-import HomeRoute from './routes/HomeRoute'
-import NotFoundRoute from './routes/NotFoundRoute'
+import MainLayout from '~/layouts/MainLayout'
+import { HomeRoute, NotFoundRoute } from './routes/pageRoutes'
 
 type AppLayout = 'main' | 'empty'
 
 type PageKey = 'home' | 'notFound'
 
 type AppRouteConfig = {
-  path: string
+  path: (typeof APP_PATHS)[keyof typeof APP_PATHS]
   layout: AppLayout
   page: PageKey
   element: RouteObject['element']
 }
+
+const routeErrorElement = <ErrorBoundary />
+
+const routeLayouts = {
+  main: (element) => <MainLayout>{element}</MainLayout>,
+  empty: (element) => element
+} satisfies Record<AppLayout, (element: RouteObject['element']) => RouteObject['element']>
 
 export const fixedRoutes = [
   {
@@ -33,8 +40,8 @@ export const notFoundRoute = {
 
 export const appRoutes = [...fixedRoutes, notFoundRoute] satisfies AppRouteConfig[]
 
-export const reactRouterRoutes = appRoutes.map(({ path, element }) => ({
+export const reactRouterRoutes = appRoutes.map<RouteObject>(({ path, layout, element }) => ({
   path,
-  element,
-  errorElement: <ErrorBoundary />
-})) satisfies RouteObject[]
+  element: routeLayouts[layout](element),
+  errorElement: routeLayouts[layout](routeErrorElement)
+}))

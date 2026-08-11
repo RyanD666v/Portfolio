@@ -1,9 +1,14 @@
 import { RouterProvider } from 'react-router'
+import AppProviders from '~/providers/AppProviders'
 import { router } from '~/router'
 import './App.css'
 
-function App() {
-  return <RouterProvider router={router} />
+const App = () => {
+  return (
+    <AppProviders>
+      <RouterProvider router={router} />
+    </AppProviders>
+  )
 }
 
 export default App

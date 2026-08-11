@@ -1,18 +1,18 @@
 import { Suspense, type ReactNode } from 'react'
-
+import { Spinner } from '../ui/spinner'
 type SuspenseWrapperProps = {
   children: ReactNode
 }
 
-function PageLoader() {
+const PageLoader = () => {
   return (
-    <section id='center' aria-live='polite' aria-busy='true'>
-      <div className='page-loader'>Loading...</div>
+    <section className='flex min-h-svh items-center justify-center' aria-live='polite' aria-busy='true'>
+      <Spinner />
     </section>
   )
 }
 
-function SuspenseWrapper({ children }: SuspenseWrapperProps) {
+const SuspenseWrapper = ({ children }: SuspenseWrapperProps) => {
   return <Suspense fallback={<PageLoader />}>{children}</Suspense>
 }
 

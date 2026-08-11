@@ -1,7 +1,7 @@
 import { Link } from 'react-router'
 import { APP_PATHS } from '~/constants/app.paths'
 
-function NotFoundPage() {
+const NotFoundPage = () => {
   return (
     <section id='center'>
       <div>

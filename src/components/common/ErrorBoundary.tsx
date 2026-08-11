@@ -1,7 +1,7 @@
 import { Link, isRouteErrorResponse, useRouteError } from 'react-router'
 import { APP_PATHS } from '~/constants/app.paths'
 
-function ErrorBoundary() {
+const ErrorBoundary = () => {
   const error = useRouteError()
   const message = isRouteErrorResponse(error) ? error.statusText : 'Something went wrong.'
 

@@ -1,6 +1,6 @@
 export const I18N_LANGUAGE_KEY = 'i18nextLng'
-export const defaultLanguage = 'vi'
-export const fallbackLanguage = 'vi'
+export const defaultLanguage = 'en'
+export const fallbackLanguage = 'en'
 export const supportedLanguages = [
   {
     value: 'vi',
