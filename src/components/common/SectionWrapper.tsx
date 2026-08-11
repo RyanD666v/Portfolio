@@ -5,7 +5,7 @@ type SectionWrapperProps = ComponentPropsWithoutRef<'section'>
 
 const SectionWrapper = ({ children, className, ...props }: SectionWrapperProps) => {
   return (
-    <section className={cn('bg-white px-12.5 flex flex-col min-h-svh', className)} {...props}>
+    <section className={cn('px-12.5 flex flex-col min-h-svh', className)} {...props}>
       {children}
     </section>
   )

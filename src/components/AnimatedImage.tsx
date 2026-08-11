@@ -1,50 +1,77 @@
-import { motion, useScroll, useSpring, useTransform } from 'motion/react'
+import { motion, useScroll, useTransform } from 'motion/react'
 import type { RefObject } from 'react'
 
 type AnimatedImageProps = {
   targetRef: RefObject<HTMLDivElement | null>
-  src: string
+  frontSrc: string
+  backSrc: string
   alt?: string
 }
 
-const AnimatedImage = ({ targetRef, src, alt = '' }: AnimatedImageProps) => {
-    const { scrollYProgress } = useScroll({
+const AnimatedImage = ({
+  targetRef,
+  frontSrc,
+  backSrc,
+  alt = ''
+}: AnimatedImageProps) => {
+  const { scrollYProgress } = useScroll({
     target: targetRef,
     offset: ['start start', 'end end']
   })
 
-  const rawY = useTransform(scrollYProgress, [0, 0.75, 1], [0, 1, 1])
-  const rawRotate = useTransform(scrollYProgress, [0, 0.75, 1], [0, 360, 360])
-  const rawScale = useTransform(scrollYProgress, [0, 0.75, 1], [1, 1.8, 1.8])
+  const frontRotateY = useTransform(
+    scrollYProgress,
+    [0, 0.95, 1],
+    [0, 180, 180]
+  )
 
-  const smoothY = useSpring(rawY, {
-    stiffness: 100,
-    damping: 30
-  })
+  const backRotateY = useTransform(
+    scrollYProgress,
+    [0, 0.95, 1],
+    [180, 360, 360]
+  )
 
-  const rotate = useSpring(rawRotate, {
-    stiffness: 100,
-    damping: 30
-  })
+  const width = useTransform(
+    scrollYProgress,
+    [0, 0.2, 0.45, 0.65, 1],
+    [250, 280, 320, 375, 375]
+  )
 
-  const scale = useSpring(rawScale, {
-    stiffness: 100,
-    damping: 30
-  })
-
-  const y = useTransform(smoothY, value => `${value * 100}svh`)
+  const height = useTransform(
+    scrollYProgress,
+    [0, 0.2, 0.45, 0.65, 1],
+    [300, 375, 429, 503, 503]
+  )
 
   return (
-    <motion.img
-      src={src}
-      alt={alt}
+    <motion.div
       style={{
-        y,
-        rotate,
-        scale
+        width,
+        height,
+        perspective: 1200
       }}
-      className='pointer-events-none absolute bottom-[calc(100svh+20px)] left-1/2 z-20 w-62.5 -translate-x-1/2'
-    />
+      className='relative'
+    >
+      <motion.img
+        src={frontSrc}
+        alt={alt}
+        style={{
+          rotateY: frontRotateY,
+          backfaceVisibility: 'hidden'
+        }}
+        className='absolute inset-0 h-full w-full rounded-lg object-cover'
+      />
+
+      <motion.img
+        src={backSrc}
+        alt={alt}
+        style={{
+          rotateY: backRotateY,
+          backfaceVisibility: 'hidden'
+        }}
+        className='absolute inset-0 h-full w-full rounded-lg object-cover'
+      />
+    </motion.div>
   )
 }
 
