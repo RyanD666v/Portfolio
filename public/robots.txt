@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dang-viet-hoang.dev/sitemap.xml

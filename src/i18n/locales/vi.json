@@ -11,6 +11,7 @@
   "nav": {
     "about": "Giới thiệu",
     "services": "Dịch vụ",
+    "techStack": "Công nghệ",
     "projects": "Dự án",
     "contact": "Liên hệ"
   },
@@ -50,57 +51,46 @@
   },
   "techStack": {
     "title": "Công nghệ",
-    "core": {
-      "title": "Nền tảng",
-      "description": "JavaScript · TypeScript · HTML · CSS"
+    "summary": "{{count}} nhóm frontend chính dựa trên CV và kinh nghiệm dự án.",
+    "languages": {
+      "title": "Ngôn ngữ",
+      "description": "TypeScript · JavaScript · HTML · CSS"
     },
-    "frontend": {
-      "title": "Frontend",
-      "description": "React · Vue · Svelte"
+    "frontendFrameworks": {
+      "title": "Frontend Framework",
+      "description": "React.js · Next.js · Vue · Svelte"
     },
-    "frameworks": {
-      "title": "Framework",
-      "description": "Next.js · Nuxt · SvelteKit"
+    "mobile": {
+      "title": "Mobile",
+      "description": "Flutter · Dart"
     },
     "uiStyling": {
       "title": "UI & Styling",
-      "description": "Tailwind CSS · Styled Components · SCSS · Ant Design · Material UI"
+      "description": "Tailwind CSS · Material UI (MUI) · Ant Design · styled-components · Bootstrap · shadcn/ui"
     },
     "stateManagement": {
       "title": "Quản lý State",
-      "description": "Redux Toolkit · Zustand · Pinia"
+      "description": "Redux Toolkit · Provider"
     },
-    "dataFetching": {
-      "title": "Xử lý dữ liệu",
-      "description": "Axios · Fetch API · TanStack Query · RTK Query"
+    "apiIntegration": {
+      "title": "Tích hợp API",
+      "description": "RESTful API · API Integration · Data-driven UI"
     },
-    "formsValidation": {
-      "title": "Form & Validation",
-      "description": "React Hook Form · Zod · Yup"
+    "localizationAuth": {
+      "title": "Đa ngôn ngữ & Xác thực",
+      "description": "i18n · LocalAuthentication · Secure Storage"
     },
-    "animation": {
-      "title": "Animation",
-      "description": "Motion · GSAP · CSS Animations"
+    "dataVisualization": {
+      "title": "Dữ liệu & Visualization",
+      "description": "DataGrid · d3-cloud"
     },
-    "testing": {
-      "title": "Kiểm thử",
-      "description": "Vitest · Jest · Testing Library"
-    },
-    "buildTools": {
-      "title": "Công cụ Build",
-      "description": "Vite · Webpack · npm · pnpm"
+    "performance": {
+      "title": "Hiệu năng",
+      "description": "Lazy Loading · Code Splitting · Component Optimization"
     },
     "developmentTools": {
       "title": "Công cụ Phát triển",
-      "description": "Git · GitHub · GitLab · Docker"
-    },
-    "designTools": {
-      "title": "Công cụ Thiết kế",
-      "description": "Figma · Adobe Photoshop"
-    },
-    "deployment": {
-      "title": "Triển khai",
-      "description": "Vercel · Nginx · Docker"
+      "description": "Git · GitHub · GitLab · Docker · Postman · Sourcetree · VS Code"
     }
   }
 }

@@ -2,7 +2,7 @@ import { useState, type MouseEvent } from 'react'
 import { useTranslation } from 'react-i18next'
 import { NavLink } from 'react-router'
 import { Menu, X } from 'lucide-react'
-import { AnimatePresence } from 'motion/react'
+import { AnimatePresence, motion } from 'motion/react'
 import { NAV_ITEMS } from '~/constants/app.nav'
 import type { AppPath } from '~/constants/app.paths'
 import { cn, scrollToHomeHashSection } from '~/lib/utils'
@@ -26,10 +26,13 @@ const Navbar = () => {
   }
 
   return (
-    <nav
+    <motion.nav
+      initial={{ opacity: 0, y: 6, filter: 'blur(2px)' }}
+      animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
+      transition={{ duration: 0.95, delay: 1.45, ease: [0.25, 0.1, 0.25, 1] }}
       className={cn(
         'bg-nav-bg absolute top-7.5 left-1/2 -translate-x-1/2 px-4 py-3 rounded-[20px] flex flex-col w-80 mx-auto overflow-hidden transition-[height,border-radius] duration-500 ease',
-        isOpen ? 'h-64.75' : 'h-15'
+        isOpen ? 'h-80' : 'h-15'
       )}
     >
       <div className='flex items-center justify-between'>
@@ -83,7 +86,7 @@ const Navbar = () => {
           </div>
         )}
       </AnimatePresence>
-    </nav>
+    </motion.nav>
   )
 }
 

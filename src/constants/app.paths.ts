@@ -2,6 +2,7 @@ export const APP_PATHS = {
   home: '/',
   about: '/#about',
   services: '/#services',
+  techStack: '/#tech-stack',
   projects: '/projects',
   contact: '/#contact',
   notFound: '*'

@@ -30,7 +30,12 @@ const HomePage = () => {
         <div className='pointer-events-none absolute inset-0 z-20'>
           <div className='sticky top-0 h-svh'>
             <div className='absolute bottom-5 left-1/2 -translate-x-1/2'>
-              <AnimatedImage targetRef={containerRef} frontSrc={fontImage} backSrc={backImage} alt='Product' />
+              <AnimatedImage
+                targetRef={containerRef}
+                frontSrc={fontImage}
+                backSrc={backImage}
+                alt='Dang Viet Hoang portfolio profile visual'
+              />
             </div>
           </div>
         </div>

@@ -11,6 +11,7 @@
   "nav": {
     "about": "About Me",
     "services": "Services",
+    "techStack": "Tech Stack",
     "projects": "Projects",
     "contact": "Contact"
   },
@@ -49,57 +50,46 @@
   },
   "techStack": {
     "title": "Tech Stack",
-    "core": {
-      "title": "Core",
-      "description": "JavaScript · TypeScript · HTML · CSS"
+    "summary": "{{count}} focused frontend groups based on my CV and project experience.",
+    "languages": {
+      "title": "Languages",
+      "description": "TypeScript · JavaScript · HTML · CSS"
     },
-    "frontend": {
-      "title": "Frontend",
-      "description": "React · Vue · Svelte"
+    "frontendFrameworks": {
+      "title": "Frontend Frameworks",
+      "description": "React.js · Next.js · Vue · Svelte"
     },
-    "frameworks": {
-      "title": "Frameworks",
-      "description": "Next.js · Nuxt · SvelteKit"
+    "mobile": {
+      "title": "Mobile",
+      "description": "Flutter · Dart"
     },
     "uiStyling": {
       "title": "UI & Styling",
-      "description": "Tailwind CSS · Styled Components · SCSS · Ant Design · Material UI"
+      "description": "Tailwind CSS · Material UI (MUI) · Ant Design · styled-components · Bootstrap · shadcn/ui"
     },
     "stateManagement": {
       "title": "State Management",
-      "description": "Redux Toolkit · Zustand · Pinia"
+      "description": "Redux Toolkit · Provider"
     },
-    "dataFetching": {
-      "title": "Data Fetching",
-      "description": "Axios · Fetch API · TanStack Query · RTK Query"
+    "apiIntegration": {
+      "title": "API Integration",
+      "description": "RESTful API · API Integration · Data-driven UI"
     },
-    "formsValidation": {
-      "title": "Forms & Validation",
-      "description": "React Hook Form · Zod · Yup"
+    "localizationAuth": {
+      "title": "Localization & Auth",
+      "description": "i18n · LocalAuthentication · Secure Storage"
     },
-    "animation": {
-      "title": "Animation",
-      "description": "Motion · GSAP · CSS Animations"
+    "dataVisualization": {
+      "title": "Data & Visualization",
+      "description": "DataGrid · d3-cloud"
     },
-    "testing": {
-      "title": "Testing",
-      "description": "Vitest · Jest · Testing Library"
-    },
-    "buildTools": {
-      "title": "Build Tools",
-      "description": "Vite · Webpack · npm · pnpm"
+    "performance": {
+      "title": "Performance",
+      "description": "Lazy Loading · Code Splitting · Component Optimization"
     },
     "developmentTools": {
       "title": "Development Tools",
-      "description": "Git · GitHub · GitLab · Docker"
-    },
-    "designTools": {
-      "title": "Design Tools",
-      "description": "Figma · Adobe Photoshop"
-    },
-    "deployment": {
-      "title": "Deployment",
-      "description": "Vercel · Nginx · Docker"
+      "description": "Git · GitHub · GitLab · Docker · Postman · Sourcetree · VS Code"
     }
   }
 }

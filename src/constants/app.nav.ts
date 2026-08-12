@@ -1,6 +1,6 @@
 import { APP_PATHS, type AppPath } from '~/constants/app.paths'
 
-export type NavLabelKey = 'nav.about' | 'nav.services' | 'nav.projects' | 'nav.contact'
+export type NavLabelKey = 'nav.about' | 'nav.services' | 'nav.techStack' | 'nav.projects' | 'nav.contact'
 
 type NavItem = {
   labelKey: NavLabelKey
@@ -15,6 +15,10 @@ export const NAV_ITEMS = [
   {
     labelKey: 'nav.services',
     path: APP_PATHS.services
+  },
+  {
+    labelKey: 'nav.techStack',
+    path: APP_PATHS.techStack
   },
   {
     labelKey: 'nav.projects',
