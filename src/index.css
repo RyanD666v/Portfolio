@@ -111,7 +111,7 @@ code {
 @theme inline {
   --font-heading: var(--font-sans);
   --font-sans: 'Inter Variable', sans-serif;
-  --text-heading-1: 174px;
+  --text-heading-1: clamp(48px, 13.59375vw, 174px);
   --text-heading-1--line-height: 0.9;
   --text-heading-1b: 72px;
   --text-heading-1b--line-height: 1;

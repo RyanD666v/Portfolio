@@ -7,9 +7,12 @@ import ServiceSection from '~/components/ServiceSection'
 import TechStackSection from '~/components/TechStackSection'
 import fontImage from '~/assets/font.jpg'
 import backImage from '~/assets/back.jpg'
+import { useScreenSize } from '~/hooks/useScreenSize'
+
 const HomePage = () => {
   const { hash } = useLocation()
   const containerRef = useRef<HTMLDivElement>(null)
+  const { isDesktop } = useScreenSize()
 
   useEffect(() => {
     if (!hash) {
@@ -27,8 +30,14 @@ const HomePage = () => {
   return (
     <>
       <div ref={containerRef} className='relative'>
-        <div className='pointer-events-none absolute inset-0 z-20'>
-          <div className='sticky top-0 h-svh'>
+        <div
+          className={
+            !isDesktop
+              ? 'pointer-events-none absolute top-0 left-0 z-20 h-svh w-full'
+              : 'pointer-events-none absolute inset-0 z-20'
+          }
+        >
+          <div className={!isDesktop ? 'relative h-svh' : 'sticky top-0 h-svh'}>
             <div className='absolute bottom-5 left-1/2 -translate-x-1/2'>
               <AnimatedImage
                 targetRef={containerRef}
@@ -43,6 +52,7 @@ const HomePage = () => {
         <HeroSection />
         <BioSection />
       </div>
+
       <ServiceSection />
       <TechStackSection />
     </>

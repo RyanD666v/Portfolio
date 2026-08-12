@@ -21,6 +21,16 @@ type TechIcon = {
   icon: string
 }
 
+const iconUrlByName = Object.fromEntries(
+  Object.entries(
+    import.meta.glob<string>('../assets/tech-icons/*.svg', {
+      eager: true,
+      query: '?url',
+      import: 'default'
+    })
+  ).map(([path, iconUrl]) => [path.split('/').at(-1)?.replace('.svg', ''), iconUrl])
+) as Record<string, string>
+
 const TECH_ICON_ROWS = [
   [
     { name: 'JavaScript', icon: 'javascript' },
@@ -59,22 +69,6 @@ const TECH_ICON_ROWS = [
     { name: 'npm', icon: 'npm' }
   ]
 ] satisfies TechIcon[][]
-
-const techIconModules = import.meta.glob<string>('../assets/tech-icons/*.svg', {
-  eager: true,
-  query: '?url',
-  import: 'default'
-})
-
-const TECH_ICON_PATHS = Object.fromEntries(
-  Object.entries(techIconModules).map(([path, iconUrl]) => {
-    const iconName = path.split('/').at(-1)?.replace('.svg', '') || ''
-
-    return [iconName, iconUrl]
-  })
-) as Record<string, string>
-
-const getIconPath = (icon: string): string => TECH_ICON_PATHS[icon] || `/tech-icons/${icon}.svg`
 
 const techStackViewport = {
   once: true,
@@ -119,18 +113,6 @@ const TechStackSection = () => {
           >
             {t('techStack.title')}
           </motion.h2>
-          {/* <motion.p
-            className='max-w-95 text-body-18 text-muted-foreground'
-            variants={techStackMotion}
-            initial='hidden'
-            whileInView='visible'
-            viewport={techStackViewport}
-            transition={{ ...techStackTransition, delay: 0.22 }}
-          >
-            {t('techStack.summary', {
-              count: TECH_STACK_ITEMS.length.toString().padStart(2, '0')
-            })}
-          </motion.p> */}
         </div>
 
         <motion.div
@@ -152,7 +134,7 @@ const TechStackSection = () => {
                   >
                     <span className='grid h-10 w-10 shrink-0 place-items-center rounded-[8px] bg-white shadow-sm'>
                       <img
-                        src={getIconPath(tech.icon)}
+                        src={iconUrlByName[tech.icon]}
                         alt={tech.name}
                         width={24}
                         height={24}
