@@ -2,11 +2,11 @@ import type { RouteObject } from 'react-router'
 import ErrorBoundary from '~/components/common/ErrorBoundary'
 import { APP_PATHS } from '~/constants/app.paths'
 import MainLayout from '~/layouts/MainLayout'
-import { HomeRoute, NotFoundRoute } from './routes/pageRoutes'
+import { HomeRoute, NotFoundRoute, ProjectsRoute } from './routes/pageRoutes'
 
 type AppLayout = 'main' | 'empty'
 
-type PageKey = 'home' | 'notFound'
+type PageKey = 'home' | 'projects' | 'notFound'
 
 type AppRouteConfig = {
   path: (typeof APP_PATHS)[keyof typeof APP_PATHS]
@@ -28,6 +28,12 @@ export const fixedRoutes = [
     layout: 'main',
     page: 'home',
     element: <HomeRoute />
+  },
+  {
+    path: APP_PATHS.projects,
+    layout: 'main',
+    page: 'projects',
+    element: <ProjectsRoute />
   }
 ] satisfies AppRouteConfig[]
 

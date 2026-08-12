@@ -40,7 +40,7 @@ const AnimatedImage = ({
   const height = useTransform(
     scrollYProgress,
     [0, 0.2, 0.45, 0.65, 1],
-    [300, 375, 429, 503, 503]
+    [250, 375, 429, 503, 503]
   )
 
   return (

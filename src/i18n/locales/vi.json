@@ -1,10 +1,106 @@
 {
   "owner": "Đặng Việt Hoàng",
+  "bio": {
+    "greeting": "Hey!",
+    "intro": "Mình là Hoàng, một Frontend Developer tại Hà Nội, tập trung xây dựng các ứng dụng web hiện đại, responsive và thân thiện với người dùng.",
+    "description": "Mình chuyên về React.js, Next.js và TypeScript, từ việc chuyển đổi thiết kế thành giao diện cho đến tích hợp API và hoàn thiện sản phẩm.",
+    "description2": "Mình quan tâm đến code sạch, hiệu năng và khả năng mở rộng. Mình thích biến những ý tưởng thành các sản phẩm thực tế và luôn tìm cách tạo ra trải nghiệm tốt hơn cho người dùng.",
+    "viewProjects": "Xem dự án"
+  },
   "position": "Front-end Developer",
   "nav": {
     "about": "Giới thiệu",
     "services": "Dịch vụ",
     "projects": "Dự án",
     "contact": "Liên hệ"
+  },
+  "controls": {
+    "switchToDark": "Chuyển sang giao diện tối",
+    "switchToLight": "Chuyển sang giao diện sáng",
+    "switchLanguage": "Chuyển ngôn ngữ"
+  },
+  "footer": {
+    "tagline": "Hồ sơ Lập trình viên Frontend.",
+    "quickLinks": "Liên kết nhanh",
+    "email": "rendersignal1@gmail.com"
+  },
+  "projects": {
+    "description": "Các dự án nổi bật và case study sẽ được thêm tại đây."
+  },
+  "creatingSince": "/SÁNG TẠO TỪ 2026",
+
+  "services": {
+    "title": "Dịch vụ",
+    "frontendDevelopment": {
+      "title": "Phát triển Frontend",
+      "description": "Ứng dụng Web · SPA · Kiến trúc Component"
+    },
+    "uiEngineering": {
+      "title": "Kỹ thuật UI",
+      "description": "Thiết kế Responsive · Design System · Animation"
+    },
+    "apiIntegration": {
+      "title": "Tích hợp API",
+      "description": "REST API · Xác thực · Quản lý State"
+    },
+    "webOptimization": {
+      "title": "Tối ưu Web",
+      "description": "Hiệu năng · Khả năng truy cập · SEO"
+    }
+  },
+  "techStack": {
+    "title": "Công nghệ",
+    "core": {
+      "title": "Nền tảng",
+      "description": "JavaScript · TypeScript · HTML · CSS"
+    },
+    "frontend": {
+      "title": "Frontend",
+      "description": "React · Vue · Svelte"
+    },
+    "frameworks": {
+      "title": "Framework",
+      "description": "Next.js · Nuxt · SvelteKit"
+    },
+    "uiStyling": {
+      "title": "UI & Styling",
+      "description": "Tailwind CSS · Styled Components · SCSS · Ant Design · Material UI"
+    },
+    "stateManagement": {
+      "title": "Quản lý State",
+      "description": "Redux Toolkit · Zustand · Pinia"
+    },
+    "dataFetching": {
+      "title": "Xử lý dữ liệu",
+      "description": "Axios · Fetch API · TanStack Query · RTK Query"
+    },
+    "formsValidation": {
+      "title": "Form & Validation",
+      "description": "React Hook Form · Zod · Yup"
+    },
+    "animation": {
+      "title": "Animation",
+      "description": "Motion · GSAP · CSS Animations"
+    },
+    "testing": {
+      "title": "Kiểm thử",
+      "description": "Vitest · Jest · Testing Library"
+    },
+    "buildTools": {
+      "title": "Công cụ Build",
+      "description": "Vite · Webpack · npm · pnpm"
+    },
+    "developmentTools": {
+      "title": "Công cụ Phát triển",
+      "description": "Git · GitHub · GitLab · Docker"
+    },
+    "designTools": {
+      "title": "Công cụ Thiết kế",
+      "description": "Figma · Adobe Photoshop"
+    },
+    "deployment": {
+      "title": "Triển khai",
+      "description": "Vercel · Nginx · Docker"
+    }
   }
 }

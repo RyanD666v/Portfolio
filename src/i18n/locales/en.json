@@ -1,10 +1,105 @@
 {
   "owner": "Ryan",
+  "bio": {
+    "greeting": "Hey!",
+    "intro": "I’m Ryan, a Frontend Developer based in Hanoi, focused on building modern, responsive, and user-friendly web applications.",
+    "description": "I specialize in React.js, Next.js, and TypeScript, from turning designs into interfaces to integrating APIs and delivering complete products.",
+    "description2": "I care about clean code, performance, and scalability. I enjoy turning ideas into real-world products and continuously looking for ways to create better user experiences.",
+    "viewProjects": "View Projects"
+  },
   "position": "Front-end Developer",
   "nav": {
     "about": "About Me",
     "services": "Services",
     "projects": "Projects",
     "contact": "Contact"
+  },
+  "controls": {
+    "switchToDark": "Switch to dark theme",
+    "switchToLight": "Switch to light theme",
+    "switchLanguage": "Switch language"
+  },
+  "footer": {
+    "tagline": "Frontend Developer Portfolio.",
+    "quickLinks": "Quick Links",
+    "email": "rendersignal1@gmail.com"
+  },
+  "projects": {
+    "description": "Selected work and case studies will be added here."
+  },
+  "creatingSince": "/CREATING SINCE 2026",
+  "services": {
+    "title": "Services",
+    "frontendDevelopment": {
+      "title": "Frontend Development",
+      "description": "Web Applications · SPA · Component Architecture"
+    },
+    "uiEngineering": {
+      "title": "UI Engineering",
+      "description": "Responsive Design · Design Systems · Animations"
+    },
+    "apiIntegration": {
+      "title": "API Integration",
+      "description": "REST APIs · Authentication · State Management"
+    },
+    "webOptimization": {
+      "title": "Web Optimization",
+      "description": "Performance · Accessibility · SEO"
+    }
+  },
+  "techStack": {
+    "title": "Tech Stack",
+    "core": {
+      "title": "Core",
+      "description": "JavaScript · TypeScript · HTML · CSS"
+    },
+    "frontend": {
+      "title": "Frontend",
+      "description": "React · Vue · Svelte"
+    },
+    "frameworks": {
+      "title": "Frameworks",
+      "description": "Next.js · Nuxt · SvelteKit"
+    },
+    "uiStyling": {
+      "title": "UI & Styling",
+      "description": "Tailwind CSS · Styled Components · SCSS · Ant Design · Material UI"
+    },
+    "stateManagement": {
+      "title": "State Management",
+      "description": "Redux Toolkit · Zustand · Pinia"
+    },
+    "dataFetching": {
+      "title": "Data Fetching",
+      "description": "Axios · Fetch API · TanStack Query · RTK Query"
+    },
+    "formsValidation": {
+      "title": "Forms & Validation",
+      "description": "React Hook Form · Zod · Yup"
+    },
+    "animation": {
+      "title": "Animation",
+      "description": "Motion · GSAP · CSS Animations"
+    },
+    "testing": {
+      "title": "Testing",
+      "description": "Vitest · Jest · Testing Library"
+    },
+    "buildTools": {
+      "title": "Build Tools",
+      "description": "Vite · Webpack · npm · pnpm"
+    },
+    "developmentTools": {
+      "title": "Development Tools",
+      "description": "Git · GitHub · GitLab · Docker"
+    },
+    "designTools": {
+      "title": "Design Tools",
+      "description": "Figma · Adobe Photoshop"
+    },
+    "deployment": {
+      "title": "Deployment",
+      "description": "Vercel · Nginx · Docker"
+    }
   }
 }

@@ -100,13 +100,6 @@ p {
   margin: 0;
 }
 
-h1,
-h2,
-h3 {
-  color: var(--color-heading);
-  line-height: 1.15;
-}
-
 code {
   font-family: var(--font-mono);
 }
@@ -218,6 +211,7 @@ code {
   --sidebar-accent-foreground: oklch(0.985 0 0);
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
+  --cream: #faf7f3;
 }
 
 @layer base {
@@ -237,5 +231,10 @@ code {
     font-size: var(--text-body-16);
     line-height: var(--text-body-16--line-height);
     font-weight: 300;
+  }
+  .section-title{
+    font-size: var(--text-heading-2);
+    line-height: var(--text-heading-2--line-height);
+    font-weight: 700;
   }
 }

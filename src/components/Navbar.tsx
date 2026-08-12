@@ -1,10 +1,11 @@
-import { useState } from 'react'
+import { useState, type MouseEvent } from 'react'
 import { useTranslation } from 'react-i18next'
 import { NavLink } from 'react-router'
 import { Menu, X } from 'lucide-react'
 import { AnimatePresence } from 'motion/react'
 import { NAV_ITEMS } from '~/constants/app.nav'
-import { cn } from '~/lib/utils'
+import type { AppPath } from '~/constants/app.paths'
+import { cn, scrollToHomeHashSection } from '~/lib/utils'
 import MotionWrapper from './common/MotionWrapper'
 import { Button } from './ui/button'
 
@@ -14,6 +15,14 @@ const Navbar = () => {
 
   const handleToggle = (): void => {
     setIsOpen((current) => !current)
+  }
+
+  const handleNavClick = (event: MouseEvent<HTMLAnchorElement>, path: Exclude<AppPath, '*'>): void => {
+    setIsOpen(false)
+
+    if (scrollToHomeHashSection(path)) {
+      event.preventDefault()
+    }
   }
 
   return (
@@ -64,8 +73,8 @@ const Navbar = () => {
               >
                 <NavLink
                   to={item.path}
-                  className='inline-flex rounded-[8px] bg-cream px-3 py-2 text-body-16 font-medium text-black'
-                  onClick={() => setIsOpen(false)}
+                  className='inline-flex rounded-[8px] bg-secondary px-3 py-2 text-body-16 font-medium text-secondary-foreground'
+                  onClick={(event) => handleNavClick(event, item.path)}
                 >
                   {t(item.labelKey)}
                 </NavLink>
