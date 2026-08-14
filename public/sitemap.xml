@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://dang-viet-hoang.dev/</loc>
+    <loc>https://portfolio-tau-one-ubj65ky9l4.vercel.app/</loc>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://dang-viet-hoang.dev/projects</loc>
+    <loc>https://portfolio-tau-one-ubj65ky9l4.vercel.app/</loc>
     <priority>0.8</priority>
   </url>
 </urlset>
