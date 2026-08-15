@@ -8,11 +8,12 @@ import TechStackSection from '~/components/TechStackSection'
 import fontImage from '~/assets/font.jpg'
 import backImage from '~/assets/back.jpg'
 import { useScreenSize } from '~/hooks/useScreenSize'
+import { cn } from '~/lib/utils'
 
 const HomePage = () => {
   const { hash } = useLocation()
   const containerRef = useRef<HTMLDivElement>(null)
-  const { isDesktop } = useScreenSize()
+  const { isDesktop, isMobile } = useScreenSize()
 
   useEffect(() => {
     if (!hash) {
@@ -38,7 +39,7 @@ const HomePage = () => {
           }
         >
           <div className={!isDesktop ? 'relative h-svh' : 'sticky top-0 h-svh'}>
-            <div className='absolute bottom-5 left-1/2 -translate-x-1/2'>
+            <div className={cn('absolute left-1/2 -translate-x-1/2', isMobile ? 'bottom-8' : 'bottom-5')}>
               <AnimatedImage
                 targetRef={containerRef}
                 frontSrc={fontImage}

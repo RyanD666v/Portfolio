@@ -2,6 +2,8 @@ import { motion } from 'motion/react'
 import { useTranslation } from 'react-i18next'
 import heroDecoration from '~/assets/money.png'
 import SectionWrapper from './common/SectionWrapper'
+import { cn } from '~/lib/utils'
+import { useScreenSize } from '~/hooks/useScreenSize'
 
 const heroEntranceTransition = {
   duration: 1,
@@ -16,6 +18,7 @@ const heroWordTransition = {
 const HeroSection = () => {
   const { t } = useTranslation()
   const positionWords = t('position').split(' ')
+  const { isMobile } = useScreenSize()
 
   return (
     <SectionWrapper id='hero-section' className='items-center justify-center relative bg-background'>
@@ -39,7 +42,7 @@ const HeroSection = () => {
             transition={{ ...heroEntranceTransition, delay: 2.25 }}
             className='pointer-events-none absolute -right-2 -bottom-9 hidden size-28 select-none object-contain md:block'
           />
-          <h1 className='relative z-10 text-heading-1 uppercase font-bold text-center wrap-break-word'>
+          <h1 className='relative z-30 text-heading-1 uppercase font-bold text-center wrap-break-word'>
             {positionWords.map((word, index) => (
               <motion.span
                 key={`${word}-${index.toString()}`}
@@ -58,7 +61,7 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 4, filter: 'blur(2px)' }}
           animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
           transition={{ ...heroEntranceTransition, delay: 1.95 }}
-          className='text-heading-2b font-bold absolute bottom-5 left-12.5'
+          className={cn('text-heading-2b font-bold', isMobile ? 'hidden' : 'absolute bottom-5 left-0')}
         >
           &copy;{new Date().getFullYear()}
         </motion.h2>
@@ -66,7 +69,10 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 4, filter: 'blur(2px)' }}
           animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
           transition={{ ...heroEntranceTransition, delay: 2.05 }}
-          className='text-body-18 font-normal absolute bottom-5 right-12.5'
+          className={cn(
+            'text-body-18 font-normal absolute',
+            isMobile ? 'left-1/2 -translate-x-1/2 bottom-0' : ' bottom-5 right-0'
+          )}
         >
           {t('creatingSince')}
         </motion.p>

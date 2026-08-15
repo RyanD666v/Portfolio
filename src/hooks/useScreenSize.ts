@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
 
 const SCREEN_BREAKPOINTS = {
-  tablet: 768,
-  desktop: 1024
+  tablet: 810,
+  desktop: 1280
 } as const
 
 type ScreenSize = {

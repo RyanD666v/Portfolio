@@ -4,6 +4,8 @@ import { Link } from 'react-router'
 import { ArrowUpRight } from 'lucide-react'
 import { APP_PATHS } from '~/constants/app.paths'
 import SectionWrapper from './common/SectionWrapper'
+import { cn } from '~/lib/utils'
+import { useScreenSize } from '~/hooks/useScreenSize'
 
 const bioViewport = {
   once: true,
@@ -30,11 +32,14 @@ const bioTransition = {
 
 const BioSection = () => {
   const { t } = useTranslation()
+  const { isDesktop } = useScreenSize()
 
   return (
     <SectionWrapper id='about' className='items-center justify-center relative bg-secondary'>
-      <div className='flex items-stretch justify-between max-w-295 w-full mx-auto flex-1 pb-5'>
-        <div className='max-w-75 flex flex-col items-start justify-end gap-75'>
+      <div
+        className={cn('flex items-stretch justify-between flex-wrap max-w-295 w-full mx-auto gap-20 pb-5', isDesktop ? 'flex-1' : '')}
+      >
+        <div className={cn('max-w-75 flex flex-col items-start', isDesktop ? 'justify-end gap-75' : 'justify-center gap-20')}>
           <h2 className='text-heading-2 font-bold mb-4'>
             <motion.span
               className='inline-block'
