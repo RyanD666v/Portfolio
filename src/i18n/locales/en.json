@@ -7,7 +7,14 @@
     "description2": "I care about clean code, performance, and scalability. I enjoy turning ideas into real-world products and continuously looking for ways to create better user experiences.",
     "viewProjects": "View Projects"
   },
+  "contributions": "Contributions",
+
+  "year": "Year",
+  "liveLink": "Live Link",
+  "description": "A selection of projects I have worked on across product development, frontend engineering",
+  "position1": "Postion",
   "position": "Front-end Developer",
+  "viewAll": "View All Project",
   "nav": {
     "about": "About Me",
     "services": "Services",
@@ -31,22 +38,22 @@
   "creatingSince": "26-05-2003",
 
   "services": {
-    "title": "Services",
+    "title": "Expertise",
     "frontendDevelopment": {
-      "title": "Frontend Development",
-      "description": "Web Applications · SPA · Component Architecture"
+      "title": "Frontend Engineering",
+      "description": "React · Next.js · TypeScript · Component Architecture"
     },
     "uiEngineering": {
       "title": "UI Engineering",
-      "description": "Responsive Design · Design Systems · Animations"
+      "description": "Responsive Design · Design Systems · Motion & Interaction"
     },
     "apiIntegration": {
-      "title": "API Integration",
-      "description": "REST APIs · Authentication · State Management"
+      "title": "Application Integration",
+      "description": "REST APIs · Authentication · State Management · Real-time"
     },
     "webOptimization": {
-      "title": "Web Optimization",
-      "description": "Performance · Accessibility · SEO"
+      "title": "Performance & Optimization",
+      "description": "Performance · Lazy Loading · Code Splitting · Code Quality"
     }
   },
   "techStack": {
@@ -54,10 +61,10 @@
     "summary": "{{count}} focused frontend groups based on my CV and project experience.",
     "languages": {
       "title": "Languages",
-      "description": "TypeScript · JavaScript · HTML · CSS"
+      "description": "TypeScript · JavaScript · Python · Dart"
     },
     "frontendFrameworks": {
-      "title": "Frontend Frameworks",
+      "title": "Frontend",
       "description": "React.js · Next.js · Vue · Svelte"
     },
     "mobile": {
@@ -91,6 +98,55 @@
     "developmentTools": {
       "title": "Development Tools",
       "description": "Git · GitHub · GitLab · Docker · Postman · Sourcetree · VS Code"
+    }
+  },
+  "projectsList": {
+    "seamspaceGroup": {
+      "subtitle": "Student Management & Communication Platform for Teachers",
+      "description": "A management platform designed for teachers to review student diaries, monitor emotional trends, communicate with students, manage newsletters and reports, and better understand student engagement and well-being.",
+      "contributions": {
+        "contribution1": "Developed and maintained Diary, Mailbox, Reports, Notifications, and Admin Dashboard modules.",
+        "contribution2": "Built reusable and responsive UI components based on Figma designs.",
+        "contribution3": "Implemented multilingual support (i18n) across the platform.",
+        "contribution4": "Improved application performance through component optimization and lazy loading.",
+        "contribution5": "Collaborated with backend developers and UI/UX designers throughout the development lifecycle."
+      }
+    },
+    "seamspaceDiary": {
+      "subtitle": "Digital Diary & Emotional Wellness Platform for Students",
+      "description": "A digital diary platform designed for students to record daily experiences, express emotions, track their emotional journey, and interact with teachers in a safe and engaging environment.",
+      "contributions": {
+        "contribution1": "Developed student diary features using Flutter and Dart.",
+        "contribution2": "Implemented biometric authentication using LocalAuthentication.",
+        "contribution3": "Developed secure screen lock functionality with encrypted local storage.",
+        "contribution4": "Managed application state using Provider.",
+        "contribution5": "Implemented multilingual support for multiple languages.",
+        "contribution6": "Optimized application lifecycle handling and application performance."
+      }
+    },
+    "kicc": {
+      "subtitle": "Korea–Vietnam ICT Business Support Platform",
+      "description": "A corporate platform that introduces KICC Vietnam’s programs, facilities, and business support services, helping Korean and Vietnamese ICT companies connect, collaborate, and explore new business opportunities.",
+      "contributions": {
+        "contribution1": "Implemented multilingual support across the application.",
+        "contribution2": "Managed application state using Redux Toolkit.",
+        "contribution3": "Integrated RESTful APIs using Axios.",
+        "contribution4": "Implemented Axios Interceptors to efficiently handle API requests, responses, and errors.",
+        "contribution5": "Developed responsive web pages using React.js and Ant Design.",
+        "contribution6": "Improved application performance through component splitting and lazy loading."
+      }
+    },
+    "projectX": {
+      "subtitle": "Job Search & Recruitment Platform",
+      "description": "A modern recruitment platform that connects job seekers with career opportunities through job search, detailed listings, application workflows, and real-time communication.",
+      "contributions": {
+        "contribution1": "Developed responsive job search and job listing pages using Next.js and React.js.",
+        "contribution2": "Integrated RESTful APIs using Axios and managed server state with TanStack Query.",
+        "contribution3": "Managed client-side state using Zustand.",
+        "contribution4": "Built reusable UI components and forms using React Hook Form and Zod.",
+        "contribution5": "Implemented real-time communication using SignalR.",
+        "contribution6": "Improved application performance through component splitting and lazy loading."
+      }
     }
   }
 }

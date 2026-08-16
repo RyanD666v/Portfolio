@@ -7,7 +7,14 @@
     "description2": "Mình quan tâm đến code sạch, hiệu năng và khả năng mở rộng. Mình thích biến những ý tưởng thành các sản phẩm thực tế và luôn tìm cách tạo ra trải nghiệm tốt hơn cho người dùng.",
     "viewProjects": "Xem dự án"
   },
+  "contributions": "Đóng góp trong dự án",
+
+  "year": "Năm",
+  "liveLink": "Xem dự án",
+  "position1": "Vị trí",
   "position": "Front-end Developer",
+  "description": "Một số dự án tôi đã tham gia trong lĩnh vực phát triển sản phẩm, frontend",
+  "viewAll": "Xem tất cả",
   "nav": {
     "about": "Giới thiệu",
     "services": "Dịch vụ",
@@ -31,22 +38,22 @@
   "creatingSince": "26-05-2003",
 
   "services": {
-    "title": "Dịch vụ",
+    "title": "Chuyên môn",
     "frontendDevelopment": {
-      "title": "Phát triển Frontend",
-      "description": "Ứng dụng Web · SPA · Kiến trúc Component"
+      "title": "Frontend Engineering",
+      "description": "React · Next.js · TypeScript · Component Architecture"
     },
     "uiEngineering": {
-      "title": "Kỹ thuật UI",
-      "description": "Thiết kế Responsive · Design System · Animation"
+      "title": "UI Engineering",
+      "description": "Responsive Design · Design Systems · Motion & Interaction"
     },
     "apiIntegration": {
-      "title": "Tích hợp API",
-      "description": "REST API · Xác thực · Quản lý State"
+      "title": "Application Integration",
+      "description": "REST APIs · Authentication · State Management · Real-time"
     },
     "webOptimization": {
-      "title": "Tối ưu Web",
-      "description": "Hiệu năng · Khả năng truy cập · SEO"
+      "title": "Performance & Optimization",
+      "description": "Performance · Lazy Loading · Code Splitting · Code Quality"
     }
   },
   "techStack": {
@@ -57,7 +64,7 @@
       "description": "TypeScript · JavaScript · HTML · CSS"
     },
     "frontendFrameworks": {
-      "title": "Frontend Framework",
+      "title": "Frontend",
       "description": "React.js · Next.js · Vue · Svelte"
     },
     "mobile": {
@@ -70,11 +77,11 @@
     },
     "stateManagement": {
       "title": "Quản lý State",
-      "description": "Redux Toolkit · Provider"
+      "description": "Redux Toolkit · Provider · TanStack Query"
     },
     "apiIntegration": {
       "title": "Tích hợp API",
-      "description": "RESTful API · API Integration · Data-driven UI"
+      "description": "RESTful API · Axios · React Query"
     },
     "localizationAuth": {
       "title": "Đa ngôn ngữ & Xác thực",
@@ -91,6 +98,57 @@
     "developmentTools": {
       "title": "Công cụ Phát triển",
       "description": "Git · GitHub · GitLab · Docker · Postman · Sourcetree · VS Code"
+    }
+  },
+  "projectsList": {
+    "seamspaceGroup": {
+      "subtitle": "Nền tảng quản lý học sinh & giao tiếp dành cho giáo viên",
+      "description": "Nền tảng dành cho giáo viên để quản lý học sinh, theo dõi diary và xu hướng cảm xúc, giao tiếp với học sinh, đồng thời quản lý newsletter, report và các hoạt động lớp học hiệu quả hơn.",
+      "contributions": {
+        "contribution1": "Phát triển và duy trì các module Diary, Mailbox, Reports, Notifications và Admin Dashboard.",
+        "contribution2": "Xây dựng các UI component reusable và responsive dựa trên thiết kế Figma.",
+        "contribution3": "Triển khai hệ thống đa ngôn ngữ (i18n) trên toàn bộ platform.",
+        "contribution4": "Cải thiện performance của ứng dụng thông qua component optimization và lazy loading.",
+        "contribution5": "Phối hợp với Backend Developer và UI/UX Designer trong suốt development lifecycle."
+      }
+    },
+
+    "seamspaceDiary": {
+      "subtitle": "Nền tảng nhật ký số & quản lý cảm xúc dành cho học sinh",
+      "description": "Nền tảng nhật ký số giúp học sinh ghi lại trải nghiệm hằng ngày, thể hiện cảm xúc, theo dõi hành trình cảm xúc và tương tác với giáo viên trong một môi trường an toàn và thân thiện.",
+      "contributions": {
+        "contribution1": "Phát triển các tính năng diary dành cho học sinh bằng Flutter và Dart.",
+        "contribution2": "Triển khai biometric authentication bằng LocalAuthentication.",
+        "contribution3": "Phát triển tính năng screen lock bảo mật kết hợp encrypted local storage.",
+        "contribution4": "Quản lý application state bằng Provider.",
+        "contribution5": "Triển khai hệ thống đa ngôn ngữ hỗ trợ nhiều ngôn ngữ khác nhau.",
+        "contribution6": "Tối ưu application lifecycle handling và performance của ứng dụng."
+      }
+    },
+    "kicc": {
+      "title": "Seamspace Diary",
+      "subtitle": "Nền tảng hỗ trợ kết nối doanh nghiệp ICT Hàn Quốc – Việt Nam",
+      "description": "Nền tảng giới thiệu các chương trình, cơ sở vật chất và dịch vụ hỗ trợ doanh nghiệp của KICC Vietnam, giúp các doanh nghiệp ICT Hàn Quốc và Việt Nam kết nối, hợp tác và mở rộng cơ hội kinh doanh.",
+      "contributions": {
+        "contribution1": "Triển khai hệ thống đa ngôn ngữ trên toàn bộ ứng dụng.",
+        "contribution2": "Quản lý application state bằng Redux Toolkit.",
+        "contribution3": "Tích hợp RESTful API bằng Axios.",
+        "contribution4": "Sử dụng Axios Interceptors để xử lý API request, response và error hiệu quả hơn.",
+        "contribution5": "Phát triển các trang web responsive bằng React.js và Ant Design.",
+        "contribution6": "Cải thiện performance của ứng dụng thông qua component splitting và lazy loading."
+      }
+    },
+    "projectX": {
+      "subtitle": "Nền tảng tìm kiếm việc làm & tuyển dụng",
+      "description": "Nền tảng tuyển dụng hiện đại kết nối ứng viên với các cơ hội nghề nghiệp thông qua tìm kiếm việc làm, thông tin tuyển dụng chi tiết, quy trình ứng tuyển và giao tiếp real-time.",
+      "contributions": {
+        "contribution1": "Phát triển các trang job search và job listing responsive bằng Next.js và React.js.",
+        "contribution2": "Tích hợp RESTful API bằng Axios và quản lý server state với TanStack Query.",
+        "contribution3": "Quản lý client-side state bằng Zustand.",
+        "contribution4": "Xây dựng các UI component và form có khả năng tái sử dụng bằng React Hook Form và Zod.",
+        "contribution5": "Triển khai real-time communication bằng SignalR.",
+        "contribution6": "Sử dụng Axios Interceptors để xử lý API request, response và error hiệu quả hơn."
+      }
     }
   }
 }

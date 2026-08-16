@@ -9,6 +9,7 @@ import fontImage from '~/assets/font.jpg'
 import backImage from '~/assets/back.jpg'
 import { useScreenSize } from '~/hooks/useScreenSize'
 import { cn } from '~/lib/utils'
+import ProjectSection from '~/components/ProjectSection'
 
 const HomePage = () => {
   const { hash } = useLocation()
@@ -56,6 +57,7 @@ const HomePage = () => {
 
       <ServiceSection />
       <TechStackSection />
+      <ProjectSection/>
     </>
   )
 }

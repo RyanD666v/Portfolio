@@ -5,6 +5,7 @@ export const APP_PATHS = {
   techStack: '/#tech-stack',
   projects: '/projects',
   contact: '/#contact',
+  projectDetail: '/projects/:slug',
   notFound: '*'
 } as const
 

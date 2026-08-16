@@ -16,7 +16,7 @@ const TECH_STACK_ITEMS = [
   'developmentTools'
 ] as const
 
-type TechIcon = {
+export type TechIcon = {
   name: string
   icon: string
 }

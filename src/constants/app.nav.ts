@@ -24,8 +24,8 @@ export const NAV_ITEMS = [
     labelKey: 'nav.projects',
     path: APP_PATHS.projects
   },
-  {
-    labelKey: 'nav.contact',
-    path: APP_PATHS.contact
-  }
+  // {
+  //   labelKey: 'nav.contact',
+  //   path: APP_PATHS.contact
+  // }
 ] satisfies NavItem[]
