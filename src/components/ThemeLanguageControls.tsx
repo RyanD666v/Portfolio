@@ -51,7 +51,7 @@ const ThemeLanguageControls = () => {
         initial={{ opacity: 0, y: 4, filter: 'blur(2px)' }}
         animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
         transition={{ duration: 0.9, delay: 2.35, ease: [0.25, 0.1, 0.25, 1] }}
-        className='fixed top-7.5 left-4 z-50'
+        className='fixed max-[490px]:top-25 top-7.5 left-4 z-50 '
       >
         <Button
           className='h-9 w-9 rounded-[8px] bg-secondary p-0 text-secondary-foreground shadow-lg shadow-black/10 hover:bg-secondary/90'
@@ -65,7 +65,7 @@ const ThemeLanguageControls = () => {
         initial={{ opacity: 0, y: 4, filter: 'blur(2px)' }}
         animate={{ opacity: 1, y: 0, filter: 'blur(0px)' }}
         transition={{ duration: 0.9, delay: 2.45, ease: [0.25, 0.1, 0.25, 1] }}
-        className='fixed top-7.5 right-4 z-50'
+        className='fixed max-[490px]:top-25 top-7.5 right-4 z-50 '
       >
         <Button
           className='h-9 gap-1 rounded-[8px] bg-secondary px-2.5 text-secondary-foreground shadow-lg shadow-black/10 hover:bg-secondary/90'

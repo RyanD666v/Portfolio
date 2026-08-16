@@ -113,11 +113,11 @@ code {
   --font-sans: 'Inter Variable', sans-serif;
   --text-heading-1: clamp(48px, 13.59375vw, 174px);
   --text-heading-1--line-height: 0.9;
-  --text-heading-1b: 72px;
+  --text-heading-1b: clamp(2.375rem, 1.627rem + 3.19vw, 4.5rem);
   --text-heading-1b--line-height: 1;
-  --text-heading-2: 76px;
+  --text-heading-2: clamp(2.5rem, 1.708rem + 3.38vw, 4.75rem);
   --text-heading-2--line-height: 1;
-  --text-heading-2b: 68px;
+  --text-heading-2b: clamp(2.25rem, 1.547rem + 3vw, 4.25rem);
   --text-heading-2b--line-height: 1;
   --text-heading-2c: 52px;
   --text-heading-2c--line-height: 1.2;

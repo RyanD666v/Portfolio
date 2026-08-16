@@ -11,12 +11,15 @@ export const seamspaceDiaryProject = {
   position: 'position',
   liveUrl: 'https://diary.seamspace.me/',
 
-  technologies: ['Flutter', 'Provider', 
-    'local_auth', 
+  technologies: [
+    'Flutter',
+    'Provider',
     'i10n',
-    'qr_flutter',
-    'share_plus',
-
+    'QR Flutter',
+    'Share Plus',
+    'Go Router',
+    'LocalAuthentication',
+    'Secure Storage'
   ],
   contributionKeys: [
     'projectsList.seamspaceDiary.contributions.contribution1',
